@@ -1,0 +1,171 @@
+/* Global Styles */
+body {
+  font-family: "Poppins", "inter";
+  background-color: #000000;
+  color: #fff;
+}
+
+
+/* Header */
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+
+/* Main */
+
+
+main {
+  background-image: url("./asset/Shape\ Blending\ Gradient\ V2@1-3414x1353.png");
+  background-attachment: fixed;
+}
+
+
+/* Hero */
+
+
+.hero {
+  display: block;
+  text-align: center;
+  margin-top: 150px;
+  padding: 100px;
+  gap: 50px;
+}
+.hero-text h1 {
+  text-align: left;
+  font-size: 128px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.hero-text h1 span {
+  color: rgb(226, 226, 226);
+  font-weight: 600;
+  font-family: "inter";
+  font-style: italic;
+
+}
+.collab {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 50px;
+  /* padding: 100px; */
+}
+.collab h1 {
+  font-size: 128px;
+  text-align: right;
+}
+.collab p {
+  text-align: left;
+  font-size: 18px;
+  width: 550px;
+  line-height: 1.5;
+}
+.sidebar {
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+  top: end;
+}
+
+
+/* Portfolio */ 
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 50px;
+}
+
+/* Cards 1 */
+
+.card-1{
+  margin-left: 50px;
+  text-align: left;
+}
+.card-1 img {
+  width: 708px;
+  height: 798px;
+}
+.card-1 h5 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.card-1 h5 span {
+  font-weight: 700;
+  font-size: 14px;
+  color: rgb(212, 212, 212, 60);
+}
+
+/* Cards 2 */
+
+.card-2{
+  margin-right: 50px;
+  text-align: right;
+}
+.card-2 img {
+  width: 900px;
+  height: 798px;
+}
+.card-2 h5 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.card-2 h5 span {
+  font-weight: 700;
+  font-size: 14px;
+  color: rgb(212, 212, 212, 60);
+}
+
+/* Cards 3 */
+
+.card-3{
+  margin-left: 50px;
+  text-align: left;
+}
+.card-3 img {
+  width: 708px;
+  height: 738px;
+}
+.card-3 h5 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.card-3 h5 span {
+  font-weight: 700;
+  font-size: 14px;
+  color: rgb(212, 212, 212, 60);
+}
+
+/* Cards 4 */
+
+.card-4{
+  margin-right: 50px;
+  text-align: right;
+}
+.card-4 img {
+  width: 1200px;
+  height: 705px;
+}
+.card-4 h5 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.card-4 h5 span {
+  font-weight: 700;
+  font-size: 14px;
+  color: rgb(212, 212, 212, 60);
+}
