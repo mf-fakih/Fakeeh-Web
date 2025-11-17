@@ -11,16 +11,31 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+
+
 </head>
 
 <body>
+
   <header>
-    <img src="./asset/portfolio-go.svg" alt="">
-    <nav>
-      <img src="./asset/link-icon_component.svg" alt="">
-      <img src="./asset/burger_component.svg" alt="">
+    <img style="width: 80px; height: 80px; justify-content: center;" src="./asset/logo-mf.png" alt="">
+
+    <!-- HAMBURGER AESTHETIC -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- NAV FULLSCREEN AESTHETIC -->
+    <nav id="nav">
+      <a href="#">Home</a>
+      <a href="#">Portfolio</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
     </nav>
   </header>
+
 
   <main>
     <!-- Hero -->
@@ -28,7 +43,8 @@
       <div class="hero-text">
         <h1>High-end <span>websites</span></h1>
         <div class="collab">
-          <p>Hey! I’m Jaro, I’ve done it all – from branding, strategy, and design all the way to Webflow development. I
+          <p>Hey! I’m Fakeeh, I’ve done it all – from branding, strategy, and design all the way to Webflow development.
+            I
             go always above and beyond and with most clients I work long-term, some like me so much they invite me to
             events. No BS.</p>
           <h1>for startups</h1>
@@ -48,26 +64,58 @@
     </section>
 
     <!-- Portfolio -->
-    <section>
+    <section class="portfolio">
       <div class="card-1">
-        <img src="./asset/work-thumbnail.png" alt="">
-        <h5>PROJECT <span>[DESIGN] [DEVELOPMENT] / [CUSTOM PROJECT]</span></h5>
+        <img src="./asset/work-thumbnail.png" alt="" id="one">
+        <img src="./asset/number_component.svg" alt="" id="wahid">
       </div>
       <div class="card-2">
-        <img src="./asset/work-thumbnail (1).png" alt="">
-        <h5>PROJECT <span>[DESIGN] [DEVELOPMENT] / [CUSTOM PROJECT]</span></h5>
+        <img src="./asset/work-thumbnail (1).png" alt="" id="two">
+        <img src="./asset/number_component.svg" alt="" id="itsani">
       </div>
       <div class="card-3">
-        <img src="./asset/work-thumbnail (2).png" alt="">
-        <h5>PROJECT <span>[DESIGN] [DEVELOPMENT] / [CUSTOM PROJECT]</span></h5>
+        <img src="./asset/work-thumbnail (2).png" alt="" id="three">
+        <img src="./asset/number_component.svg" alt="" id="tsalasah">
       </div>
       <div class="card-4">
-        <img src="./asset/work-thumbnail (3).png" alt="">
-        <h5>PROJECT <span>[DESIGN] [DEVELOPMENT] / [CUSTOM PROJECT]</span></h5>
+        <img src="./asset/work-thumbnail (3).png" alt="" id="four">
+        <img src="./asset/number_component.svg" alt="" id="arba">
       </div>
     </section>
 
+    <!-- about me -->
+
+    <section class="about-me">
+
+      <div class="about-image">
+        <img src="./asset/fakeeh.webp" alt="">
+      </div>
+
+      <div class="about-text">
+        <div class="h5span">
+          <h5>ABOUT ME</h5> <span> [SECTION]</span>
+        </div>
+        <h2>Nunc pellent en esque pellenum vitaeu maximus</h2>
+        <p>I'm Fakeeh, a passionate web designer and developer with a knack for creating stunning, high-end websites.
+          With expertise in branding, strategy, and Webflow development, I bring ideas to life and help startups
+          establish a strong online presence. Let's collaborate to build something amazing together!</p>
+        <span class="about-span">About mf <img src="./asset/union-1.svg"></span>
+
+      </div>
+
+    </section>
   </main>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const nav = document.getElementById("nav");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      nav.classList.toggle("active");
+    });
+  </script>
+
 </body>
 
 </html>
