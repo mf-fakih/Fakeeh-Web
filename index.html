@@ -11,9 +11,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
-  <link rel="icon" href="./asset/logo-mf.png"
-
-
+  <link rel="icon" type="image/x-icon" href="./asset/logo-mf.png">
 </head>
 
 <body>
@@ -40,7 +38,7 @@
 
   <main>
     <!-- Hero -->
-    <section class="hero">
+    <section class="hero reveal">
       <div class="hero-text">
         <h1>High-end <span>websites</span></h1>
         <div class="collab">
@@ -65,7 +63,7 @@
     </section>
 
     <!-- Portfolio -->
-    <section class="portfolio">
+    <section class="portfolio reveal">
       <div class="card-1">
         <img src="./asset/work-thumbnail.png" alt="" id="one">
         <img src="./asset/number_component.svg" alt="" id="wahid">
@@ -86,7 +84,7 @@
 
     <!-- about me -->
 
-    <section class="about-me">
+    <section class="about-me parallax">
 
       <div class="about-image">
         <img src="./asset/fakeeh.webp" alt="">
@@ -105,6 +103,8 @@
       </div>
 
     </section>
+
+
   </main>
 
   <script>
@@ -115,9 +115,38 @@
       hamburger.classList.toggle("active");
       nav.classList.toggle("active");
     });
+
+    // Scroll reveal effect
+
+
+    const sections = document.querySelectorAll('.reveal');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          entry.target.style.transitionDelay = `${index * 0.15}s`;
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    sections.forEach(sec => observer.observe(sec));
+
+
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('.parallax-bg');
+
+      sections.forEach(section => {
+        const speed = 0.4; // Semakin besar -> background makin cepat bergerak
+        const offset = window.pageYOffset;
+
+        section.style.backgroundPositionY = -(offset * speed) + "px";
+      });
+    });
+
+
   </script>
 
 </body>
-
 
 </html>
