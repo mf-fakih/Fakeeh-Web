@@ -310,7 +310,7 @@ main {
 .about-text .h5span {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 20px;
 }
 .about-text h5 {
   font-family: "poppins";
@@ -375,3 +375,4 @@ main {
   color: #ff5e5e;
   text-shadow: 0 0 25px rgba(255, 100, 100, 0.8);
 }
+
