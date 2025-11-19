@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Fakhril Fakih</h1>
-<h3 align="center">Experienced IT Teacher | Passionate Software Engineer | Technology Advocate</h3>
+<h3 align="center"> Web Develpoer | Software Engineering | Technology Advocate </h3>
 
 
 
